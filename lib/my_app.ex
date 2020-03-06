@@ -2,6 +2,7 @@ defmodule MyApp.CLI do
   @moduledoc """
   Documentation for `MyApp`.
   """
+  @spec main(Any.t()) :: [Atom.t()]
   def main(_) do
     IO.puts("Hello world: #{fizzbuzz(34)}")
   end

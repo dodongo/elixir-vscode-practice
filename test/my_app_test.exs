@@ -1,6 +1,12 @@
-defmodule MyAppCLITest do
+defmodule MyApp.Test do
   use ExUnit.Case
   doctest MyApp.CLI
+
+  describe "MyApp.CLI.main" do
+    test "returns :ok" do
+      assert MyApp.CLI.main("args") == :ok
+    end
+  end
 
   describe "MyApp.CLI.fizzbuzz(number)" do
     test """
